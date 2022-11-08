@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
                     <img src='../../../PaintHub-logo-300x266.png' width="75" height="75" className="inline-block fill-current" alt='paint hub'></img>
-                    <h1 className='font-bold text-4xl mx-3 text-teal-500'>Paint Hub</h1>
+                    <h1 className='font-bold text-2xl md:text-4xl mx-3 text-teal-500'>Paint Hub</h1>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">

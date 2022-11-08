@@ -9,20 +9,29 @@ const Banner = () => {
 
     return (
         <div>
-            
+
 
             <div className="carousel w-3/4 mx-auto">
-                <div id="item1" className="carousel-item w-full">
+                <div id="item1" className="carousel-item relative w-full">
                     <img src={img1} className="w-full" alt="bn" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-10 top-1/3">
+                        <h1 className='font-bold text-white md:text-2xl lg:text-4xl'>Welcome to<br/> <span>Paint Hub</span></h1>
+                    </div>
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-10 md:top-1/2 sm:top-1/2 top-2/3">
+                        <p className=' text-white  md:text-xl'>Lets dive into the beautiful world of painting.<br/>And mark yourself as a painting lover</p>
+                    </div>
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-10 md:top-3/4  bottom-0">
+                        <button className="btn btn-secondary btn-xs sm:btn-sm md:btn-secondary text-xs">Get Started</button>
+                    </div>
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src={img2} className="w-full" alt="bn"  />
+                    <img src={img2} className="w-full" alt="bn" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src={img3} className="w-full"  alt="bn" />
+                    <img src={img3} className="w-full" alt="bn" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
-                    <img src={img4} className="w-full"  alt="bn" />
+                    <img src={img4} className="w-full" alt="bn" />
                 </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
