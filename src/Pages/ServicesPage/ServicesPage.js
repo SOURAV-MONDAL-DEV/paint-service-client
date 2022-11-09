@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import ServiceCard from './ServiceCard';
+import ServiceCard from '../Home/services/ServiceCard';
 
-const Services = () => {
-
+const ServicesPage = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('services.json')
@@ -22,20 +20,16 @@ const Services = () => {
             </div>
             <div className=' lg:mx-20 grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto my-10'>
                 {
-                    services.slice(0, 3).map(service => <ServiceCard
+                    services.map(service => <ServiceCard
                         key={service._id}
                         service={service}
                     ></ServiceCard>)
                 }
-                <div className=" w-96 bg-base-100 shadow-xl flex items-center justify-center mx-auto">
-                    <Link to='/services'>
-                        <button className='btn rounded-lg bg-fuchsia-600 text-white border-0 px-10 text-lg'>see all  🡢</button>
-                    </Link>
-                </div>
+                
             </div>
 
         </div>
     );
 };
 
-export default Services;
+export default ServicesPage;
