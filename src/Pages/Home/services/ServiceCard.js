@@ -12,7 +12,7 @@ const ServiceCard = ({service}) => {
                 <textarea maxlength="50">{description}</textarea>
                 <div className="card-actions justify-end">
                     <p className='font-bold text-xl'>price: <span className='text-pink-600'>${Price}</span></p>
-                    <button className="py-2 rounded-lg text-white px-3 bg-green-500">Buy Now</button>
+                    <button className="py-2 rounded-lg text-white px-3 bg-green-500">View Details</button>
                 </div>
             </div>
             <image src={image}></image>
