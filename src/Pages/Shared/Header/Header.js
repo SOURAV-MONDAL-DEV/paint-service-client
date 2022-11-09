@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/AurhProvider/AuthProvider';
 
 const Header = () => {
+
+    const {user} = useContext(AuthContext);
+    console.log(user);
 
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
@@ -34,7 +38,17 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to='/login'><button className="btn btn-outline btn-primary btn-sm rounded-md">Login</button></Link>
+                {
+                    user?.uid ?
+                    <>
+                        <span className='mx-1'>{user?.displayName}</span>
+                        <button onClick="" className='m-1  p-1 ' variant="outline-info"> Log out</button>
+                    </>
+                    :
+                    <>
+                        <Link to='/login'><button className="btn btn-outline btn-primary btn-sm rounded-md">Login</button></Link>
+                    </>
+                }
             </div>
         </div>
     );
