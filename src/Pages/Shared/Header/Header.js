@@ -5,7 +5,6 @@ import { AuthContext } from '../../../Context/AurhProvider/AuthProvider';
 const Header = () => {
 
     const {user, logOut} = useContext(AuthContext);
-    console.log(user);
 
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
