@@ -4,7 +4,7 @@ import { AuthContext } from '../../../Context/AurhProvider/AuthProvider';
 
 const Header = () => {
 
-    const {user} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
     console.log(user);
 
     const menuItems = <>
@@ -41,8 +41,9 @@ const Header = () => {
                 {
                     user?.uid ?
                     <>
-                        <span className='mx-1'>{user?.displayName}</span>
-                        <button onClick="" className='m-1  p-1 ' variant="outline-info"> Log out</button>
+                        <img src={user?.photoURL} className='w-1/12 rounded-full mx-3' alt=''></img> 
+                        <span className='mx-1 font-semibold'>{user?.displayName}</span>
+                        <button onClick={logOut} className="btn btn-outline btn-sm rounded-md p-1 text-xs text-blue-800 mx-3" > Log out</button>
                     </>
                     :
                     <>
