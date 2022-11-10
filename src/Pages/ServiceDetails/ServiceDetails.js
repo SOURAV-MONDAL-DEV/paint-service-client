@@ -69,7 +69,7 @@ const ServiceDetails = () => {
                         <p className='p-10 text-lg font-semibold '>{description}</p>
                     </div>
                     <div className='flex-auto md:w-64 md:p-20'>
-                        <div className='mx-auto md:max-w-xs'>
+                        <div className='card w-96 bg-base-100 shadow-xl mx-auto md:max-w-xs p-3'>
                             <h1 className='text-xl font-bold my-8 '>price :  <span className='text-fuchsia-600'>${Price}</span></h1>
                             <h1 className='text-xl font-semi-bold my-3 '>Time Required : <span className='font-bold text-gray-600'>3 Days</span></h1>
                             <h1 className='text-xl font-semi-bold my-3 '>Frame Size : <span className='font-bold text-gray-600'>36 X 24 "</span></h1>
