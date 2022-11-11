@@ -12,7 +12,7 @@ const ServiceCard = ({ service }) => {
             <figure>
                 <PhotoProvider>
                     <PhotoView src={image}>
-                        <img src={image} style={{ objectFit: 'cover' }} alt="Shoes" />
+                        <img src={image} style={{ objectFit: 'cover' }} alt="ServicesPhoto" />
                     </PhotoView>
                 </PhotoProvider>
             </figure>

@@ -48,7 +48,7 @@ const ServiceDetails = () => {
             .then(data => {
                 console.log(data)
                 if (data.acknowledged) {
-                    alert('Order placed successfully')
+                    alert('Review post successfully')
                     form.reset();
 
                 }

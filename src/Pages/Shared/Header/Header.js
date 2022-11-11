@@ -13,8 +13,8 @@ const Header = () => {
         {
             user?.uid ?
             <>
-                <li className='font-semibold'><Link to='/'>Add Service</Link></li>
-                <li className='font-semibold'><Link to='/'>My reviews</Link></li>
+                <li className='font-semibold'><Link to='/addservice'>Add Service</Link></li>
+                <li className='font-semibold'><Link to='/myreviews'>My reviews</Link></li>
             </>
             :
             <></>
