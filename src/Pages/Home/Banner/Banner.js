@@ -11,7 +11,7 @@ const Banner = () => {
         <div>
 
 
-            <div className="carousel w-3/4 mx-auto">
+            <div className="carousel w-5/6 mx-auto">
                 <div id="item1" className="carousel-item relative w-full">
                     <img src={img1} className="w-full" alt="bn" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-10 top-1/3">

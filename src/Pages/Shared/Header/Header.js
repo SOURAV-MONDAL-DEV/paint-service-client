@@ -9,11 +9,12 @@ const Header = () => {
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
         <li className='font-semibold'><Link to='/services'>Services</Link></li>
-        <li className='font-semibold'><Link to='/'>Blog</Link></li>
+        <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
         {
             user?.uid ?
             <>
                 <li className='font-semibold'><Link to='/'>Add Service</Link></li>
+                <li className='font-semibold'><Link to='/'>My reviews</Link></li>
             </>
             :
             <></>
@@ -34,8 +35,8 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to="/" className="btn btn-ghost normal-case text-xl">
-                    <img src='../../../PaintHub-logo-300x266.png' width="75" height="75" className="inline-block fill-current" alt='paint hub'></img>
+                <Link to="/" className="flex md:mx-5">
+                    <img src='../../../PaintHub-logo-300x266.png' className="inline-block fill-current w-1/6" alt='paint hub'></img>
                     <h1 className='font-bold text-2xl md:text-4xl mx-3 text-teal-500'>Paint Hub</h1>
                 </Link>
             </div>
@@ -48,9 +49,9 @@ const Header = () => {
                 {
                     user?.uid ?
                     <>
-                        <img src={user?.photoURL} className='w-1/12 rounded-full mx-3' alt=''></img> 
-                        <span className='mx-1 font-semibold'>{user?.displayName}</span>
-                        <button onClick={logOut} className="btn btn-outline btn-sm rounded-md p-1 text-xs text-blue-800 mx-3" > Log out</button>
+                        <img src={user?.photoURL} className='w-1/12 rounded-full md:mx-3' alt=''></img> 
+                        <span className='mx-1 font-semibold text-sm md:text-lg'>{user?.displayName}</span>
+                        <button onClick={logOut} className="btn btn-outline btn-xs rounded-md p-1 text-xs text-blue-800 mx-3" > Log out</button>
                     </>
                     :
                     <>

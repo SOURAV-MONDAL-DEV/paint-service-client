@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### The name of the project:
+ "PAINT SERVICE REVIEW"
+
+ ### Feature and functionalities:
+ 1. Have a navigation bar to navigate deferent route.
+ 2. Have a dedicated services page.
+ 3. There are shown customer review.
+ 4. User can add his\her own review.
+ 5. customer can place order.
